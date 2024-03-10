@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(resources/backgroundImage1.jpg);
+    animation: backgroundImages 30s linear infinite;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container, #titleContainer, .numberInput, .optionsParagraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#container {
+    width: 80%;
+    height: 90%;
+    overflow: clip;
+    justify-content: space-around;
+    border: 2px solid lightslategray;
+    border-radius: 1em;
+    background-color: rgba(10, 96, 209, 0.185);
+}
+#titleContainer {
+    width: 100%;
+    height: 30%;
+    padding: 1%;
+    border-top: 2px solid lightslategray;
+    border-bottom: 2px solid lightslategray;
+    background-color: rgb(26, 61, 97);
+    color: white;
+}
+.numberInput {
+    justify-content: space-evenly;
+    height: 100%;
+}
+#screeenContainer{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 60%;
+    border: 2px solid lightslategray;
+    background-color: white;
+}
+#buttonMenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.numInput, .numSendButton {
+    width: 40%;
+    font-family: 'Lucida Sans';
+    border: 2px solid #27bdc4;
+}
+.optionButton {
+    padding: 1em;
+    font-family: 'Lucida Sans';
+    border: 2px solid #27bdc4;
+    color: white;
+    background-color: rgba(12, 54, 145, 0.5);
+    transition: translate 0.1s ease-out;
+}
+.optionButton:focus {
+    border: 2px solid red;
+    translate: 0 -5px;
+}
+.optionsParagraph {
+    margin-bottom: 2%;
+}
+.credit {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    padding: 0.2em;
+    font-family: 'Lucida Sans';
+    border: 2px solid #27bdc4;
+    color: white;
+    background-color: rgba(12, 54, 145, 0.5);
+    transition: translate 0.1s ease-out;
+}
+.credit:focus {
+    border: 2px solid red;
+    translate: 0 -5px;
+}
+.disableDisplay {
+    display: none;
+}
+@keyframes backgroundImages {
+    20% {
+        background-image: url(resources/backgroundImage2.jpg);
+    }
+    40% {
+        background-image: url(resources/backgroundImage3.jpg);
+    }
+    60% {
+        background-image: url(resources/backgroundImage4.jpg);
+    }
+    80%{
+        background-image: url(resources/backgroundImage5.jpg);
+    }
+}
+@media screen and (max-width: 400px) {
+    #container {
+        border-radius: 2em;
+    }
+    .title {
+        margin-top: 0.8em;
+    }
+    .optionButton {
+        padding: 0.5em;
+        font-size: 3em;
+    }
+    .optionsParagraph {
+        margin-bottom: 1em;
+    }
+    .credit {
+        right: 0.2em;
+        bottom: 0.2em;
+    }
+}
+@media screen and (max-width: 540px)  {
+    #screeenContainer{
+        margin-bottom: 15em;
+        width: 100%;
+        height: 40%;
+    }
+    #container {
+        border-radius: 2em;
+    }
+    .buttonsContainer {
+        display: flex;
+    }
+    .optionButton {
+        padding: 0.5em;
+    }
+    .title {
+        font-size: 5em;
+    }
+    label {
+        font-size: 3.5em;
+    }
+    .optionsParagraph {
+        margin-bottom: 3%;
+        font-size: 4em !important;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    #screeenContainer{
+        margin-bottom: 10em;
+        width: 100%;
+        height: 40%;
+    }
+    #container {
+        border-radius: 2em;
+    }
+    .title {
+        font-size: 5em;
+    }
+    label {
+        font-size: 3.5em;
+    }
+    .optionsParagraph {
+        margin-bottom: 3%;
+        font-size: 4em !important;
+    }
+}
+@media screen and (min-width: 3000px) {
+    * {
+        font-size: 1em;
+    }
+}

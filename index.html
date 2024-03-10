@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Etch-a-Sketch</title>
+        <meta 
+            charset="UTF-8"/>
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"/>
+        <link 
+            rel="stylesheet"
+            href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="titleContainer">
+                <h1 class="title">Etch-a-Sketch</h1>
+                <form class="numberInput">
+                    <label for="quantity">Input the resolution (between 1 and 100)</label>
+                    <div id="buttonMenu">
+                        <input type="number" class="numInput" min="1" max="100">
+                        <button type="button" class="numSendButton">Send</button>
+                    </div>
+                    <div id="styleButtons">
+                        <p class="optionsParagraph">Choose a color</p>
+                        <div class="buttonsContainer"> 
+                            <button type="button" class="blackColorButton optionButton">Black</button>
+                            <button type="button" class="pastelColorsButton optionButton">Pastel Colors</button>
+                            <button type="button" class="rainbowButton optionButton">Rainbow Mode</button>
+                            <button type="button" class="eraserButton optionButton">Eraser</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="screeenContainer"></div>
+        </div>
+        <button class="credit">Made by Adibast</button>
+    </body>
+</html>
